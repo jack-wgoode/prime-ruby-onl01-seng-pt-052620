@@ -1,13 +1,7 @@
 # Add  code here!
 def prime?(number)
-  
-  if number == 2
-    return true    
-  elsif  number.negative?() || number.even?
-    return false
-  elsif number.odd? && number != 1 
-    return true
-  else return false
+  (2..(number - 1)).each do |n|
+    return false if number % n == 0
   end
-end    
-  
+  true
+end
