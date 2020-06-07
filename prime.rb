@@ -5,7 +5,7 @@ def prime?(number)
     return true    
   elsif  number.negative?() || number.even?
     return false
-  elsif number.odd? ||number == 2 
+  elsif number.odd? && number != 1 
     return true
   
   end
