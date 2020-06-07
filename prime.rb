@@ -1,8 +1,11 @@
 # Add  code here!
 def prime?(number)
-  if number.negative() || number.even?
+  
+  if number == 2
+    return true    
+  elsif  number.negative?() || number.even?
     return false
-  elsif number.to_i == 2 || number.to_i.odd?
+  elsif number.odd? ||number == 2 
     return true
   
   end
